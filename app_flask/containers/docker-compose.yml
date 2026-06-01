@@ -1,3 +1,6 @@
+# コンテナ名
+name: effect-museum
+
 services:
   web:
     # このフォルダ（.）にあるDockerfileを使って構築する
