@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +9,49 @@
 </head>
 
 <body>
-    <nav>
-        <!-- ロゴエリア：アイコン（エフェクト）＋テキスト -->
-        <a href="#" class="nav-logo">
-            <div class="nav-icon">
-                <div class="effect-a effect-a__orbit">
-                    <div class="effect-a__ball"></div>
-                    <div class="effect-a__ball"></div>
-                    <div class="effect-a__ball"></div>
-                    <div class="effect-a__ball"></div>
-                    <div class="effect-a__ball"></div>
-                    <div class="effect-a__ball"></div>
-                    <div class="effect-a__center"></div>
+    <header>
+        <nav>
+            <!-- ロゴエリア：アイコン（エフェクト）＋テキスト -->
+            <a href="#" class="nav-logo">
+                <div class="nav-icon">
+                    <div class="effect-a effect-a__orbit">
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__center"></div>
+                    </div>
                 </div>
-            </div>
-            <span class="nav-logo-text">Effect Museum</span>
-        </a>
+                <span class="nav-logo-text">Effect Museum</span>
+            </a>
 
-        <!-- ナビゲーションリンク -->
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Effect Lab</a></li>
-        </ul>
-    </nav>
+            <!-- ナビゲーションリンク -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Effect Lab</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    
+    <main>
+        <!-- ヒーローセクション（説明欄） -->
+        <section class="hero">
+            <p class="hero-eyebrow">Test Web Site</p>
+            <h1 class="hero-title">
+                <span>Effect</span>
+                <span>Museum</span>
+            </h1>
+            <p class="hero-desc">
+                エフェクトの実験場です。<br>
+                ご自由にご観覧ください。
+            </p>
+
+        </section>
+    </main>
+
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>

@@ -87,7 +87,88 @@ nav {
     text-decoration: none; /* リンクの下線を消す */
 }
 
-
 .nav-links a:hover {
     color: rgba(240, 235, 228, 0.92);
+}
+
+/*
+=============================================
+ヒーローセクション：土台
+=============================================
+*/
+.hero {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column; /* 子要素を縦方向に並べる */
+    justify-content: center; /* 子要素を縦方向の中央に揃える */
+    padding: 120px 48px 80px;
+}
+
+/*
+=============================================
+ヒーローセクション：サブテキスト
+=============================================
+*/
+.hero-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase; /* 大文字にできる*/
+    color: rgba(220, 210, 200, 0.55);
+    margin-bottom: 28px;
+}
+
+/*
+=============================================
+ヒーローセクション：タイトル
+=============================================
+*/
+.hero-title {
+    font-size: clamp(4rem, 10vw, 9rem); /* clamp(最小値, 推奨値, 最大値) */
+    font-weight: 300; /* フォントの太さ（標準：400） */
+    line-height: 0.9; /* 行間 */
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+}
+
+.hero-title span {
+    display: block;
+    /*<span>を縦に並ばせることができる*/
+}
+
+/*
+=============================================
+ヒーローセクション：説明文
+=============================================
+*/
+
+.hero-desc {
+    font-size: 0.85rem;
+    line-height: 2;
+    color: rgba(220, 210, 200, 0.55);
+    margin-bottom: 40px;
+}
+
+/*
+=============================================
+ヒーローセクション：ボタン
+=============================================
+*/
+
+.hero-btn {
+    display: inline-flex; /* 横並び-内部の子要素を揃える */
+    align-items: center;
+    padding: 14px 32px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 2px; /* 角の丸み */
+    color: rgba(240, 235, 228, 0.92);
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    transition: background 0.4s ease, border-color 0.4s ease; /* ホバー時の変化時間 */
+}
+
+.hero-btn:hover {
+    background: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.35);
 }
