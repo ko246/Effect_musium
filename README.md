@@ -3,6 +3,7 @@
 
 
 # 実行手順
+(事前に/app_flask/containersに遷移してください。)
 1. Dockerイメージを作成
     docker-compose build
 
