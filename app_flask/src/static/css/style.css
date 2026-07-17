@@ -172,3 +172,20 @@ nav {
     background: rgba(255, 255, 255, 0.13);
     border-color: rgba(255, 255, 255, 0.35);
 }
+
+/*
+=============================================
+誘導セクション：土台
+=============================================
+*/
+
+.navigate {
+    padding: 120px 48px;
+}
+
+.navigate-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 60px;
+}
