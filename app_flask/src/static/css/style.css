@@ -189,3 +189,71 @@ nav {
     letter-spacing: 0.1em;
     margin-bottom: 60px;
 }
+
+/*
+=============================================
+誘導セクション：カードグリッド
+=============================================
+*/
+
+.navigate-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 列の構成を定義。この場合は「同じ幅の列を2つ作る」 */
+    gap: 24px;
+}
+
+/*
+=============================================
+誘導セクション：カード
+=============================================
+*/
+
+.navigate-card {
+    display: flex;
+    flex-direction: column; /* ラベル・タイトル・説明・ボタンを縦に並べる */
+
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.03); /* うっすら白を乗せたガラス風の背景 */
+    backdrop-filter: blur(12px); /* 背景をぼかしてガラスのような透明感を出す */
+
+    text-decoration: none;
+    color: inherit;
+
+    transition: background 0.4s ease, border-color 0.4s ease, transform 0.4s ease;
+}
+
+.navigate-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px); /* 少し浮き上がる動き */
+}
+
+.navigate-card-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: rgba(220, 210, 200, 0.55);
+    margin-bottom: 20px;
+}
+
+.navigate-card-title {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.navigate-card-desc {
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: rgba(220, 210, 200, 0.55);
+    margin-bottom: 32px;
+}
+
+.navigate-card-btn {
+    margin-top: auto; /* ボタンをカード下端に揃える */
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+}
+
