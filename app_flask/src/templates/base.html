@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Effect Museum{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/effects/effect-a.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- ロゴエリア：アイコン（エフェクト）＋テキスト -->
+            <a href="{{ url_for('index') }}" class="nav-logo">
+                <div class="nav-icon">
+                    <div class="effect-a effect-a__orbit">
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__center"></div>
+                    </div>
+                </div>
+                <span class="nav-logo-text">Effect Museum</span>
+            </a>
+
+            <!-- ナビゲーションリンク -->
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('effect_lab') }}">Effect Lab</a></li>
+                <li><a href="#">Herbarium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <span class="footer-logo">Effect Museum</span>
+        <span class="footer-copyright">&copy; 2026 Effect Museum</span>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+
+</html>
