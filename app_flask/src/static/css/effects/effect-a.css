@@ -80,3 +80,26 @@ transform　→　円周上の初期位置・サイズ
 .effect-a__ball:nth-child(4) { --i:3; --pos:rotate( 90deg); transform:rotate( 90deg) translateY(-20px); width:4px; height:4px; margin:-2px; background:rgba(210,162,175,0.88); }
 .effect-a__ball:nth-child(5) { --i:4; --pos:rotate(120deg); transform:rotate(120deg) translateY(-20px); width:4px; height:4px; margin:-2px;   background:rgba(178,190,162,0.88); }
 .effect-a__ball:nth-child(6) { --i:5; --pos:rotate(150deg); transform:rotate(150deg) translateY(-20px); width:4px; height:4px; margin:-2px; background:rgba(148,200,205,0.92); }
+
+/* =============================================
+effect-a：中心点
+============================================= */
+
+.effect-a__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    margin: -1.5px;
+    border-radius: 50%;
+    background: rgba(200, 220, 240, 0.6);
+}
+
+/* =============================================
+effect-a：拡大表示（Effect Labのメインプレビュー用）
+============================================= */
+
+.effect-a__orbit--lg {
+    transform: scale(3.5); /* ボールの座標計算はそのままに、見た目だけ拡大する */
+}

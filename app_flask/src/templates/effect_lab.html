@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Effect Lab | Effect Museum{% endblock %}
+
+{% block content %}
+    <section class="lab">
+        <p class="lab-eyebrow">Effect Lab</p>
+        <h1 class="lab-title">Effect Lab</h1>
+
+        <!-- メインプレビュー：選択中のエフェクトを実演 -->
+        <div class="lab-stage-wrap">
+            <div id="lab-stage" class="lab-stage"></div>
+
+            <div class="lab-info">
+                <h2 id="lab-effect-name" class="lab-info-name"></h2>
+                <div class="lab-info-meta">
+                    <span class="lab-info-tag">実装方式：<span id="lab-effect-method"></span></span>
+                    <span class="lab-info-tag">用途：<span id="lab-effect-usage"></span></span>
+                </div>
+                <p id="lab-effect-desc" class="lab-info-desc"></p>
+            </div>
+        </div>
+
+        <!-- ギャラリー：クリックでメインプレビューを切り替え -->
+        <div class="lab-gallery">
+            <button type="button" class="lab-card is-active" data-effect="a">
+                <div class="lab-card-preview">
+                    <div class="effect-a effect-a__orbit">
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__ball"></div>
+                        <div class="effect-a__center"></div>
+                    </div>
+                </div>
+                <p class="lab-card-label">01</p>
+                <h3 class="lab-card-title">Ball Orbit Loader</h3>
+            </button>
+
+            <!-- 今後追加するエフェクト用のプレースホルダー -->
+            <div class="lab-card lab-card--placeholder">
+                <p class="lab-card-label">--</p>
+                <h3 class="lab-card-title">Coming Soon</h3>
+                <p class="lab-card-desc">準備中</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
