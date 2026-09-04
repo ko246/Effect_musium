@@ -257,3 +257,29 @@ nav {
     letter-spacing: 0.15em;
 }
 
+/*
+=============================================
+フッター
+=============================================
+*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* ロゴとコピーライトを両端に配置 */
+
+    padding: 32px 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-logo {
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+}
+
+.footer-copyright {
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: rgba(220, 210, 200, 0.55);
+}
+
