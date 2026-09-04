@@ -28,10 +28,10 @@
                 <span class="nav-logo-text">Effect Museum</span>
             </a>
 
-            <!-- ナビゲーションリンク -->
+            <!-- ナビゲーションリンク：現在地は.is-activeで判別できるようにする -->
             <ul class="nav-links">
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('effect_lab') }}">Effect Lab</a></li>
+                <li><a href="{{ url_for('index') }}" class="{{ 'is-active' if request.endpoint == 'index' }}">Home</a></li>
+                <li><a href="{{ url_for('effect_lab') }}" class="{{ 'is-active' if request.endpoint == 'effect_lab' }}">Effect Lab</a></li>
                 <li><a href="#">Herbarium</a></li>
             </ul>
         </nav>

@@ -91,6 +91,12 @@ nav {
     color: rgba(240, 235, 228, 0.92);
 }
 
+.nav-links a.is-active {
+    color: rgba(240, 235, 228, 0.92); /* 現在地：ホバー時と同じ文字色 */
+    border-bottom: 1px solid rgba(240, 235, 228, 0.55); /* 下線でホバーと区別する */
+    padding-bottom: 4px;
+}
+
 /*
 =============================================
 ヒーローセクション：土台
@@ -361,6 +367,17 @@ Effect Lab：メインプレビュー
     font-size: 0.85rem;
     line-height: 1.8;
     color: rgba(220, 210, 200, 0.55);
+}
+
+/* 幅が狭い画面では2カラムだと細長くなるため、プレビューの下に情報パネルを積む */
+@media (max-width: 900px) {
+    .lab-stage-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-stage {
+        min-height: 320px;
+    }
 }
 
 /*
